@@ -28,7 +28,7 @@ jobs:
       - name: Start Next.js Server
         run: |
           npm run start &
-          npx wait-on http://localhost:3000
+          npx wait-on http://localhost:10000
 
       - name: Run Playwright Tests
         run: npx playwright test

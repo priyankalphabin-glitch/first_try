@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -66,76 +66,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "homepage loads",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1024,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-03-05T06:17:33.851Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-f613a8bcc94cae10e948",
-          "file": "example.spec.ts",
-          "line": 5,
-          "column": 5
-        },
-        {
-          "title": "All URL loads",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 3585,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-03-05T06:17:33.824Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-2f851463b4cc618fb237",
-          "file": "example.spec.ts",
-          "line": 11,
-          "column": 5
-        },
-        {
           "title": "Contact form submission",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -146,47 +78,31 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 7,
                   "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30022,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\SC\\Desktop\\new\\project_try\\e2e\\example.spec.ts",
-                        "column": 14,
-                        "line": 31
-                      },
-                      "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=submit')\u001b[22m\n\n\n\u001b[0m \u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"#email\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"john.doe@example.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"#contactNumber\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"1234567890\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=submit\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Thank you for your message!\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\SC\\Desktop\\new\\project_try\\e2e\\example.spec.ts:31:14\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 2419,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-03-05T06:17:35.091Z",
+                  "startTime": "2026-03-05T09:52:12.189Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\SC\\Desktop\\new\\project_try\\test-results\\example-Contact-form-submission-chromium\\error-context.md"
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\SC\\Desktop\\new\\project_try\\test-results\\example-Contact-form-submission-chromium\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "a30a6eba6312f6b87ea5-13a2148d0893c69c22f8",
           "file": "example.spec.ts",
-          "line": 25,
+          "line": 26,
           "column": 5
         }
       ]
@@ -194,11 +110,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-05T06:17:32.426Z",
-    "duration": 32797.584,
-    "expected": 2,
+    "startTime": "2026-03-05T09:52:09.566Z",
+    "duration": 5606.435000000056,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

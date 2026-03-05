@@ -28,6 +28,6 @@ test("Contact form submission", async ({ page }) => {
   await page.fill("#name", "John Doe");
   await page.fill("#email", "john.doe@example.com");
   await page.fill("#contactNumber", "1234567890");
-  await page.click("text=Send Message");
+  await page.click("text=submit");
   await expect(page.getByText("Thank you for your message!")).toBeVisible();
 });
